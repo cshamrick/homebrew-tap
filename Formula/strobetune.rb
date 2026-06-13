@@ -1,17 +1,17 @@
 class Strobetune < Formula
-  desc "Analog-style strobe tuner for the terminal"
+  desc "Analog-style strobe tuner for guitar, in the terminal"
   homepage "https://github.com/cshamrick/strobetune"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_arm do
-    url "https://github.com/cshamrick/strobetune/releases/download/v0.1.0/strobetune-v0.1.0-aarch64-apple-darwin.tar.gz"
-    sha256 "d18b0a647e3e658b13157cdf5faf00faeea219aa38f574230520ed3cc3f2c826"
+    url "https://github.com/cshamrick/strobetune/releases/download/v0.2.0/strobetune-v0.2.0-aarch64-apple-darwin.tar.gz"
+    sha256 "fcf90aff9b251281ae40607504c8d87301dcaa4467ec2f86c26a8b97285353b1"
   end
 
   on_intel do
-    url "https://github.com/cshamrick/strobetune/releases/download/v0.1.0/strobetune-v0.1.0-x86_64-apple-darwin.tar.gz"
-    sha256 "95c490af1b0219c049713e7ec6cb7210d60b01628189266dd797b6b5d33e1e0b"
+    url "https://github.com/cshamrick/strobetune/releases/download/v0.2.0/strobetune-v0.2.0-x86_64-apple-darwin.tar.gz"
+    sha256 "1da4e1d0478e835a6c68d35134d59c8ceb7a75f0d352e5c07f296b3b1564a7e3"
   end
 
   def install
@@ -19,6 +19,6 @@ class Strobetune < Formula
   end
 
   test do
-    assert_path_exists bin/"strobetune"
+    assert_match "strobetune", shell_output("#{bin}/strobetune --version")
   end
 end
