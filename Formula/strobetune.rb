@@ -1,17 +1,17 @@
 class Strobetune < Formula
   desc "Analog-style strobe tuner for guitar, in the terminal"
   homepage "https://github.com/cshamrick/strobetune"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_arm do
-    url "https://github.com/cshamrick/strobetune/releases/download/v0.2.0/strobetune-v0.2.0-aarch64-apple-darwin.tar.gz"
-    sha256 "fcf90aff9b251281ae40607504c8d87301dcaa4467ec2f86c26a8b97285353b1"
+    url "https://github.com/cshamrick/strobetune/releases/download/v0.2.1/strobetune-v0.2.1-aarch64-apple-darwin.tar.gz"
+    sha256 "1dc6c81f6161c3e4bbee037d2abc65bebffcfe578ca90303d04370ac099726e0"
   end
 
   on_intel do
-    url "https://github.com/cshamrick/strobetune/releases/download/v0.2.0/strobetune-v0.2.0-x86_64-apple-darwin.tar.gz"
-    sha256 "1da4e1d0478e835a6c68d35134d59c8ceb7a75f0d352e5c07f296b3b1564a7e3"
+    url "https://github.com/cshamrick/strobetune/releases/download/v0.2.1/strobetune-v0.2.1-x86_64-apple-darwin.tar.gz"
+    sha256 "573c0b0ecfa56671e5b43579550cb733de0ad01bf2bf0214884a8fd7245da3ec"
   end
 
   def install
